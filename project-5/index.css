@@ -1,0 +1,48 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.frame-image {
+    margin-top: 100px;
+    height: 85%;
+    width: 60%;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.control {
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.control:hover {
+    background-color: blue;
+}
+
+.prev {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: -35px;
+}
+
+.next {
+    position: absolute;
+    top: calc(50% - 30px);
+    right: -35px;
+}

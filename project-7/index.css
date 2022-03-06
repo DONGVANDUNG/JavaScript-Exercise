@@ -1,0 +1,204 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ .container-header {
+     max-width: 560px;
+     margin: 0 auto;
+ }
+ 
+ .header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     height: 200px;
+ }
+ 
+ .header__title {
+     font-size: 30px;
+     color: red;
+ }
+ 
+ .btn {
+     padding: 15px 20px;
+     min-width: 20px;
+     border: none;
+     background-color: rgb(134, 241, 241);
+     color: black;
+     border-radius: 3px;
+     cursor: pointer;
+     font-size: 18px;
+ }
+ 
+ .header__nav {
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+ 
+ .btn:hover {
+     opacity: 0.8;
+ }
+ 
+ .active {
+     background-color: red;
+     color: white;
+ }
+ 
+ .btn+.btn {
+     margin-left: 5px;
+ }
+ 
+ .main {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .search {
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     width: 100%;
+     height: 60px;
+     margin-bottom: 80px;
+ }
+ 
+ .search__input {
+     border: 1px solid gray;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+     width: 88%;
+     height: 85%;
+     padding: 5px 20px;
+     font-size: 18px;
+     outline: none;
+ }
+ 
+ .search__icon {
+     border: 1px solid gray;
+     background-color: #f5f5f5;
+     position: absolute;
+     right: 2px;
+     height: 85%;
+     width: 13%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+ 
+ .search__icon:hover {
+     background-color: aqua;
+ }
+ 
+ .container-body {
+     max-width: 900px;
+     margin: 0 auto;
+ }
+ 
+ .list-product {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ 
+ .cake-item {
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-bottom: 50px;
+     height: 300px;
+ }
+ 
+ .image-cake {
+     width: 100%;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     cursor: pointer;
+     height: 60%;
+ }
+ 
+ .image-cake:hover {
+     opacity: 0.8;
+ }
+ 
+ .detail-cake {
+     display: flex;
+     justify-content: space-between;
+     padding: 0px 14px;
+     border: 1px solid gray;
+     border-top: none;
+     flex: 1;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     align-items: center;
+ }
+ 
+ .cake-name,
+ .cake-price {
+     font-size: 20px;
+ }
+ 
+ .cake-price {
+     color: red;
+ }
+ 
+ .modal {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     background-color: #fff;
+     align-items: center;
+     opacity: 0.4;
+     display: none;
+ }
+ 
+ .modal-box {
+     position: fixed;
+     background-image: url('../image/cake-1.jpeg');
+     background-size: cover;
+     top: 60px;
+     bottom: 80px;
+     left: 200px;
+     right: 200px;
+     z-index: 10;
+     display: none;
+ }
+ 
+ .control-prev {
+     position: absolute;
+     left: -20px;
+     top: calc(50% - 25px);
+     cursor: pointer;
+     font-size: 50px;
+ }
+ 
+ .control-next {
+     position: absolute;
+     right: -20px;
+     top: calc(50% - 25px);
+     font-size: 50px;
+     cursor: pointer;
+ }
+ 
+ .exit {
+     position: absolute;
+     top: -35px;
+     right: -25px;
+     color: red;
+     font-size: 40px;
+     cursor: pointer;
+ }
+ 
+ .exit:hover {
+     opacity: 0.5;
+ }

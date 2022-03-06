@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header container-header">
+            <div class="header__title">Welcom to my store</div>
+            <div class="header__nav">
+                <button class="btn btn-all active" data-filter="all">All</button>
+                <button class="btn btn-cake" data-filter="cakes">Cakes</button>
+                <button class="btn btn-cake" data-filter="cupcakes">Cupcakes</button>
+                <button class="btn btn-sweet" data-filter="sweet">Sweet</button>
+                <button class="btn btn-doughnout" data-filter="doughout">Doughnout</button>
+            </div>
+        </div>
+        <div class="main container-header">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Input name product...">
+                <div class="search__icon" title="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="product-store">
+        <div class="list-product container-body">
+            <div class="cake-item" data-item="cakes">
+                <img src="../image/cake-1.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cake coconut</p>
+                    <p class="cake-price">5$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="cakes">
+                <img src="../image/cake-2.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cake super</p>
+                    <p class="cake-price">8$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="cakes">
+                <img src="../image/cake-3.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cake canota</p>
+                    <p class="cake-price">15$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="cupcakes">
+                <img src="../image/cupcake-1.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cupcake coconut</p>
+                    <p class="cake-price">2$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="cupcakes">
+                <img src="../image/cupcake-2.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cupcake coconut</p>
+                    <p class="cake-price">25$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="cupcakes">
+                <img src="../image/cupcake-3.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Cupcake coconut</p>
+                    <p class="cake-price">9$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="sweet">
+                <img src="../image/sweets-1.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Sweet coconut</p>
+                    <p class="cake-price">7$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="sweet">
+                <img src="../image/sweets-2.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Sweet coconut</p>
+                    <p class="cake-price">15$</p>
+                </div>
+            </div>
+            <div class="cake-item" data-item="sweet">
+                <img src="../image/sweets-3.jpeg" alt="" class="image-cake">
+                <div class="detail-cake">
+                    <p class="cake-name">Sweet coconut</p>
+                    <p class="cake-price">50$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+    </div>
+    <div class="modal-box">
+        <div class="exit">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="control-prev"><i class="fa-solid fa-caret-left"></i></div>
+        <div class="control-next"><i class="fa-solid fa-caret-right"></i></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

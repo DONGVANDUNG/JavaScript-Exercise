@@ -1,0 +1,29 @@
+.change-hexa-color {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #db5e5e;
+}
+
+.btn-change-color {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.btn-change-color:hover {
+    opacity: 0.8;
+}
+
+.hexa-color {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
