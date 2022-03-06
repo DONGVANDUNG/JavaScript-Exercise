@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 .header {
-    margin-left: 50px;
-    margin-top: 50px;
+    padding-left: 150px;
+    padding-top: 20px;
 }
 
 .title {
@@ -27,4 +31,111 @@
 .btn-add:hover {
     background-color: orangered;
     color: white
+}
+
+.main {
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.form {
+    border: 1px solid orangered;
+    width: 45%;
+    padding: 20px 0px 20px 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.form .title {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-filed {
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn {
+    margin-top: 20px;
+    height: 40px;
+    display: block;
+    min-width: 150px;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-control {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+
+.btn:hover {
+    background-color: rgb(72, 255, 0);
+    color: rgb(241, 238, 238)
+}
+
+.btn-exit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-exit:hover {
+    background-color: rgb(233, 72, 72);
+}
+
+.detail-question {
+    width: 30%;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+}
+
+.control-answer {
+    font-size: 19px;
+    padding: 5px 0 15px 0;
+    text-decoration: none;
+}
+
+.question-title {
+    padding: 20px 0;
+    width: 70%;
+    font-size: 19px;
+    text-align: center;
+}
+
+.answer {
+    padding: 5px 0;
+    font-size: 19px;
+    width: 70%;
+    text-align: center;
+    display: none;
+}
+
+.sub-control {
+    padding-bottom: 20px;
 }
