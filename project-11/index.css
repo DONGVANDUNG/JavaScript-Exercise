@@ -139,3 +139,7 @@ body {
 .sub-control {
     padding-bottom: 20px;
 }
+
+button:disabled {
+    background: #ccc;
+}

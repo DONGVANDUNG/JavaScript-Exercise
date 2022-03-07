@@ -5,6 +5,7 @@ const btnSave = document.querySelector('.btn-save')
 const contentQuestion = document.querySelector('#question')
 const contentAnswer = document.querySelector('#answer');
 const form = document.querySelector('.form')
+const editQuestion = document.querySelector('.btn-edit')
 
 
 function getContentQuestion(e) {
@@ -12,12 +13,16 @@ function getContentQuestion(e) {
     const question = contentQuestion.value;
     const answer_content = contentAnswer.value;
     if (contentQuestion.value !== '' && contentAnswer.value !== '') {
+        //reset question
+        if (document.querySelector('.detail-question')) {
+            document.querySelector('.detail-question').remove()
+        }
         boxQuestion.insertAdjacentHTML("beforeend", `<div class="detail-question">
         <p class="question-title">${contentQuestion.value}</p>
         <a href="#" class="control-answer">Show/Hiden Answer</a>
         <p class="answer">${contentAnswer.value}</p>
         <div class="btn-control sub-control">
-            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-sub-edit">Edit</button>
             <button class="btn btn-delete">Delete</button>
         </div>
         </div>`)
@@ -28,8 +33,8 @@ function getContentQuestion(e) {
         const answer = document.querySelector('.answer')
         const btnDelete = document.querySelector('.btn-delete')
         const detailQuestion = document.querySelector('.detail-question')
-        const btnEdit = document.querySelector('.btn-edit')
-            //show - hidden answer
+        const btnEdit = document.querySelector('.btn-sub-edit');
+        //show - hidden answer
         if (controlAnswer) {
             controlAnswer.addEventListener('click', function() {
                 if (answer.style.display == 'block') {
@@ -49,12 +54,11 @@ function getContentQuestion(e) {
         ///edit Answer
         if (btnEdit) {
             btnEdit.addEventListener('click', function() {
-                console.log("aaaa")
                 form.style.display = 'block';
                 contentQuestion.value = question;
                 contentAnswer.value = answer_content;
                 btnAdd.style.display = 'block'
-                btnSave.disable = true;
+                btnSave.disabled = true;
                 detailQuestion.style.display = 'none'
             })
         }
@@ -75,3 +79,4 @@ btnExit.addEventListener('click', function() {
     boxQuestion.style.display = 'none'
 })
 btnSave.addEventListener('click', getContentQuestion);
+editQuestion.addEventListener('click', getContentQuestion)
