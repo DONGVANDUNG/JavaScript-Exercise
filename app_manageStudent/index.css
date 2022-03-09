@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f5f5f5;
+    height: 625px;
+    display: flex;
+    justify-content: center;
+}
+
+.gird {
+    width: 43%;
+    background-color: rgb(51, 158, 153);
+    height: 66%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.page_title {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+    color: white
+}
+
+.btn-add {
+    margin-top: 50px;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    outline: none;
+    border: 2px solid rgb(9, 255, 0);
+    background-color: rgb(111, 0, 255);
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: black
+}
+
+.contact-us {
+    background-color: rgb(238, 225, 225);
+    width: 55%;
+    height: 40%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.admin-page {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    color: blue
+}
+
+.img-admin {
+    width: 12%;
+    height: 90%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-facebook {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.icon-facebook {
+    font-size: 28px;
+    margin-right: 22px;
+}
+
+.link-facebook {
+    height: 100%;
+    width: 80%;
+    color: blue
+}
+
+.link-facebook:hover,
+.email:hover {
+    opacity: 0.8;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.icon-email {
+    font-size: 25px;
+    color: black;
+    margin-right: 20px;
+}
+
+.email {
+    width: 80%;
+    color: blue
+}
+
+.list-student {
+    position: absolute;
+    top: 30px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.list-student__title {
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.list-student__btn-add-student,
+.btn-home {
+    width: 17%;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    border-left: 2px solid burlywood;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-home {
+    border-right: 2px solid burlywood;
+    border-left: none;
+    border-radius: 5px 0 0 5px;
+    width: 10%;
+}
+
+.list-student__btn-add-student:hover,
+.btn-home:hover {
+    opacity: 0.9;
+    color: rgb(197, 226, 224);
+}
+
+.box-student__infor {
+    margin-top: 120px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 28%;
+    display: none;
+}
+
+.student-item {
+    width: 22.5%;
+    background-color: blueviolet;
+    height: 100%;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+
+.detail-infor-student {
+    height: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+    display: none;
+}
+
+.form-student {
+    position: absolute;
+    top: 155px;
+    background-color: #fff;
+    width: 30%;
+    height: 38%;
+    z-index: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 18px;
+    color: blueviolet
+}
+
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid blueviolet;
+    font-size: 16px;
+}
+
+.btn-control {
+    width: 80%;
+}
+
+.btn-save-infor,
+.btn-cancel {
+    float: right;
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
+    color: blueviolet;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+}
+
+.btn-save-infor:hover,
+.btn-cancel:hover {
+    background-color: aqua;
+    color: white
+}
+
+.btn-save-infor {
+    margin-left: 15px;
+}
+
+.input-error {
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px 0;
+}
+
+.btn-change {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: navajowhite;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}

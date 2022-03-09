@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gird">
+            <h1 class="page_title">App manage student and teacher</h1>
+            <div class="btn-add">
+                <button class="btn btn-add__student">Add Student</button>
+            </div>
+            <div class="contact-us">
+                <div class="admin-page">
+                    <img src="../image/vandung.jpg" alt="" class="img-admin">
+                    <p class="name">Đồng Văn Dũng</p>
+                </div>
+                <div class="contact-facebook">
+                    <i class="fa-brands fa-facebook icon-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100014422260107" class="link-facebook">https://www.facebook.com/profile.php?id=100014422260107</a>
+                </div>
+                <div class="contact-email">
+                    <i class="fa-solid fa-envelope icon-email"></i>
+                    <a href="#" class="email">Vandung030701@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="list-student">
+            <button class="btn-home">Home</button>
+            <p class="list-student__title">Danh sách sinh viên</p>
+            <button class="list-student__btn-add-student">Thêm sinh viên</button>
+        </div>
+        <div class="box-student__infor">
+            <div class="student-item">
+                <div class="detail-infor-student">
+                    <p class="student_name">Tên sinh viên: Dung</p>
+                    <p class="student_class">Lớp: 64IT2</p>
+                    <p class="student_gpa">GPA Tích Lũy: 3.2</p>
+                </div>
+                <div class="btn-change">
+                    <i class="fa-solid fa-trash icon icon-delete"></i>
+                    <i class="fa-solid fa-wrench icon icon-edit"></i>
+                    <i class="fa-solid fa-ban icon icon-delete icon-hidden"></i>
+                </div>
+            </div>
+        </div>
+        <div class="modal"></div>
+        <div class="form-student">
+            <div class="form-student__form-name form">
+                <label for="name">Tên sinh viên</label>
+                <input type="text" id="name" class="form-student__name input">
+            </div>
+            <div class="form-student__form-class form">
+                <label for="class">Lớp</label>
+                <input type="text" id="class" class="form-student__class input">
+            </div>
+            <div class="form-student__form-point form">
+                <label for="gpa">Điểm GPA</label>
+                <input type="text" id="gpa" class="form-student__gpa input">
+            </div>
+            <div class="btn-control">
+                <button class="btn-save-infor">Save</button>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
