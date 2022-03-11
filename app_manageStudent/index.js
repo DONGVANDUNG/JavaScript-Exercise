@@ -54,12 +54,7 @@ const appAddStudent = {
                         inputNull++;
                         item.classList.add('input-error');
                     } else {
-
-                        if (!Number.isFinite(inputPointStudent.value)) {
-                            inputPointStudent.classList.add('input-error');
-                            inputNull++;
-                        } else
-                            item.classList.remove('input-error');
+                        item.classList.remove('input-error');
                         inputPointStudent.classList.remove('input-error');
 
                     }
@@ -96,14 +91,8 @@ const appAddStudent = {
                                 inputNull++;
                                 item.classList.add('input-error');
                             } else {
-
-                                if (!Number.isFinite(inputPointStudent.value)) {
-                                    inputPointStudent.classList.add('input-error');
-                                    inputNull++;
-                                } else
-                                    item.classList.remove('input-error');
+                                item.classList.remove('input-error');
                                 inputPointStudent.classList.remove('input-error');
-
                             }
 
                             // catch keyboard enter
